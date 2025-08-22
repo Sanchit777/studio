@@ -1,3 +1,5 @@
+'use client';
+
 import { ScrollArea } from '@/components/ui/scroll-area';
 import type { ChatMessage as ChatMessageType } from '@/lib/types';
 import { ChatMessage } from './chat-message';
