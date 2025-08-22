@@ -14,7 +14,7 @@ export default function ChatPage() {
     // This will only run on the client, after initial hydration
     setMessages([
       {
-        id: crypto.randomUUID(),
+        id: 'initial-bot-message',
         role: 'bot',
         content: 'Hello! How can I help you with DTable Analytics AppScript project creation today?',
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
