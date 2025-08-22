@@ -30,7 +30,7 @@ export default function LoginPage() {
             <CardContent className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="m@example.com" required />
+                <Input id="email" type="email" placeholder="m@example.com" required suppressHydrationWarning />
               </div>
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
@@ -39,11 +39,11 @@ export default function LoginPage() {
                         Forgot password?
                     </a>
                 </div>
-                <Input id="password" type="password" required />
+                <Input id="password" type="password" required suppressHydrationWarning />
               </div>
             </CardContent>
             <CardFooter>
-              <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" suppressHydrationWarning>
                 Sign In
               </Button>
             </CardFooter>
