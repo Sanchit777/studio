@@ -9,7 +9,7 @@ async function login(formData: FormData) {
   'use server';
   // In a real app, you would validate credentials here.
   // For this demo, we'll just redirect.
-  redirect('/chat');
+  redirect('/');
 }
 
 export default function LoginPage() {

@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import { ChatPopup } from '@/components/chat/chat-popup';
 
 export const metadata: Metadata = {
   title: 'DTable Assist',
@@ -21,6 +22,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         {children}
+        <ChatPopup />
         <Toaster />
       </body>
     </html>
