@@ -3,6 +3,11 @@
 import { answerAppscriptQuestion } from '@/ai/flows/answer-appscript-question';
 
 export async function askQuestion(question: string): Promise<string> {
+  if (!process.env.GEMINI_API_KEY) {
+    console.error('Missing GEMINI_API_KEY environment variable.');
+    return 'The AI service is not configured correctly. Please contact the administrator.';
+  }
+
   if (!question) {
     return "Please provide a question.";
   }
